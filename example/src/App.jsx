@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { usePage } from 'react-page-states';
 
 const App = () => {
@@ -14,4 +13,5 @@ const App = () => {
     </div>
   )
 }
-export default App
+
+export default App;

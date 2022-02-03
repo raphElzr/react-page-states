@@ -8655,8 +8655,9 @@ react-is@^16.13.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-"react-page-states@file:..":
-  version "1.0.0"
+"react-page-states@link:..":
+  version "0.0.0"
+  uid ""
 
 react-scripts@^3.4.3:
   version "3.4.4"
@@ -8718,12 +8719,9 @@ react-scripts@^3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
-"react@file:../node_modules/react":
-  version "16.14.0"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
+"react@link:../node_modules/react":
+  version "0.0.0"
+  uid ""
 
 read-pkg-up@^2.0.0:
   version "2.0.0"

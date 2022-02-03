@@ -8,8 +8,13 @@
 
 ```bash
 npm install --save react-page-states
+or
 yarn add react-page-states
 ```
+
+## Features
+
+* pageNo and pageSize saved in url search params to handle page refresh
 
 ## Usage
 

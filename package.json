@@ -1,6 +1,6 @@
 {
   "name": "react-page-states",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook for bundling typical states used in table pagination",
   "author": "raphElzr",
   "license": "MIT",
@@ -18,8 +18,8 @@
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c && tsc -d --emitDeclarationOnly --noEmit false --declarationDir dist",
     "start": "rollup -c -w",
-    "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
+    "prepare": "yarn run build",
+    "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {},

@@ -12,10 +12,11 @@ const QUERY_SIZE = 'pageSize';
 const usePage = (props: Props = {}) => {
     const getSearchParams = () => {
         let searchParams = {};
-        let searchMatch = window.location.href.match(/(?<=\?)(.*?)(?=#|\/|$)/g);
+        let urlString = window.location.href.split('?');
     
-        if (searchMatch && searchMatch.length > 0) {
-            let params = searchMatch[0].split('&');
+        if (urlString && urlString.length > 1) {
+            let searchParamsString = urlString[1];
+            let params = searchParamsString.split('&');
     
             params.forEach((param) => {
                 let item = param.split('=');
@@ -39,7 +40,9 @@ const usePage = (props: Props = {}) => {
         let newURL = '';
 
         if (Object.keys(oldSearchParams).length > 0) {
-            newURL = window.location.href.replace(/(?<=\?)(.*?)(?=#|\/|$)/g, newParamString);
+            let urlString = window.location.href.split('?');
+            urlString[1] = newParamString;
+            newURL = urlString.join('?');
         } else {
             newURL = window.location.href + '?' + newParamString;
         }

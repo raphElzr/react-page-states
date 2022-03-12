@@ -1,6 +1,6 @@
 {
   "name": "react-page-states",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React hook for bundling typical states used in table pagination",
   "author": "raphElzr",
   "license": "MIT",
